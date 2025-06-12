@@ -1,0 +1,111 @@
+/* Employee Item Styles */
+.employee-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.employee-item:hover {
+  background-color: #e5e7eb;
+}
+
+.employee-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.employee-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ea580c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-text {
+  color: white;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.employee-details {
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+}
+
+.employee-name {
+  margin: 0;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.employee-email {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.employee-position {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.delete-button {
+  padding: 0.5rem;
+  color: #6b7280;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-button:hover {
+  color: #dc2626;
+  background-color: #fef2f2;
+}
+
+.delete-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.delete-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Add Employee Button Styles */
+.add-employee-button {
+  width: 100%;
+  background-color: #ea580c;
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.add-employee-button:hover {
+  background-color: #dc2626;
+}
+
+.add-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}

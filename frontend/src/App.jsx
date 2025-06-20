@@ -1,4 +1,4 @@
-import AdminPanel from './AdminPanel'
+import AdminPanel from './pages/AdminPanel'
 import './App.css'
 
 function App() {

@@ -10,6 +10,22 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "mysql2": "^3.14.1"
-  }
+    "mysql2": "^3.14.1",
+    "nodemailer": "^7.0.3",
+    "qrcode": "^1.5.4",
+    "body-parser": "^1.20.2",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "meeting",
+    "attendance",
+    "qr-code",
+    "management"
+  ],
+  "author": "vespineIT",
+  "license": "MIT"
+
 }

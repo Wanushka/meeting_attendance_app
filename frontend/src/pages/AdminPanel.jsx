@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, X, User } from 'lucide-react';
-import EmployeeList from './components/EmployeeList';
-import EmployeeModal from './components/EmployeeModal';
-import DashboardCard from './components/DashboardCard';
-import TitleBar from './components/TitleBar';
-import FooterBar from './components/FooterBar';
-import { employeeService } from './services/employeeService';
+import EmployeeList from '../components/EmployeeList';
+import EmployeeModal from '../components/EmployeeModal';
+import DashboardCard from '../components/DashboardCard';
+import TitleBar from '../components/TitleBar';
+import FooterBar from '../components/FooterBar';
+import { employeeService } from '../services/employeeService';
 import './AdminPanel.css';
 
 const AdminPanel = () => {
@@ -99,8 +99,9 @@ const AdminPanel = () => {
 
         <div className="dashboard-grid">
           <DashboardCard 
-            title="Meeting Dashboard"
-            content=""
+            employees={employees}
+            loading={loading}
+            onEmployeeUpdate={fetchEmployees}
           />
 
           <div className="employees-card">
